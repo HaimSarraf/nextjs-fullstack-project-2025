@@ -3,10 +3,13 @@ import type { Metadata } from "next";
 import Header from "@/src/components/Header";
 import "./globals.css";
 
-
 export const metadata: Metadata = {
-  title: "Repair Shop",
+  title: {
+    default: "%s | Repair Shop",
+    template: "Repair Shop",
+  },
   description: "Owner : Sarraf",
+  applicationName: "CPU Repair Shop"
 };
 
 export default function RootLayout({
